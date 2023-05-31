@@ -16,8 +16,8 @@ class AdapterActivity(private val list: ArrayList<User>, private val listener: o
         val nama = itemView.findViewById<TextView>(R.id.tv_nama)
     }
 
+    //menampilkan tampilan adapter.xml
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.activity_adapter, parent, false
@@ -25,15 +25,18 @@ class AdapterActivity(private val list: ArrayList<User>, private val listener: o
         )
     }
 
+    //berisi data apasaja yang akan dimunculkan
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val user = list[position]
         holder.nis.text = user.idUser.toString()
         holder.nama.text = user.namaUser.toString()
+        //supaya id bisa di clik, blh ada blh tdk
         holder.nis.setOnClickListener{
             listener.onClick(user)
         }
     }
 
+    //membaca seberapa banyak data yang ada paa RV
     override fun getItemCount() = list.size
 
     fun setData (listData: List<User>){

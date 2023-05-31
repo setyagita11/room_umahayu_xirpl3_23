@@ -16,6 +16,7 @@
 
         <LinearLayout
             android:layout_width="406dp"
+            android:padding="10dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,15 +27,17 @@
                 android:id="@+id/tv_nis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NIS Siswa"
-                android:textSize="20dp"/>
+                android:text="   NIS Siswa"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/tv_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Siswa"
-                android:textSize="20dp" />
+                android:text="   Nama Siswa"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
