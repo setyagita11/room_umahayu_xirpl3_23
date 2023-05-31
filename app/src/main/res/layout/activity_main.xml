@@ -22,21 +22,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="NIS Siswa"
+            android:text="Nama Siswa"
             android:textSize="15dp"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+            app:layout_constraintTop_toBottomOf="@+id/idUser" />
 
         <EditText
-            android:id="@+id/idUser"
+            android:id="@+id/namaUser"
             android:layout_width="280dp"
             android:layout_height="35dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/background1"
-            android:hint="   NIS Siswa"
+            android:hint="   Nama Siswa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Nama Siswa"
+            android:text="NIS Siswa"
             android:textSize="15dp"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,12 +56,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/namaUser"
+            android:id="@+id/idUser"
             android:layout_width="280dp"
             android:layout_height="35dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/background1"
-            android:hint="   Nama Siswa"
+            android:hint="   NIS Siswa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.548"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idUser" />
+            app:layout_constraintTop_toBottomOf="@+id/namaUser" />
 
         <Button
             android:id="@+id/btnSimpan"
@@ -111,7 +111,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/background1"
             android:ems="10"
-            android:hint="Jenis Kelamiin"
+            android:hint="   Jenis Kelamiin"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
